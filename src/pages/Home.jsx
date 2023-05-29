@@ -1,27 +1,21 @@
 import { DividerTypeOne, DividerTypeTwo } from "../components/divider";
-import "./pagestyling.css";
-import exampleImage from "../img/ExamplePhoto.jpg";
-import TessaWouters from "../img/TessaWouters.jpg";
-import GyroLogo from "../img/gyrologo.png";
-import TessaWoutersHouding from "../img/tessawoutershouding.png";
-import MooiePose from "../img/mooiepose.png";
+import TessaWoutersHouding from "../img/tessawoutershoudingBlob.png";
 import LesGeven from "../img/Lesgeven.jpg";
 import LesGeven2 from "../img/Lesgeven2.jpg";
 import LesGeven3 from "../img/Lesgeven3.jpg";
 import LesGeven4 from "../img/Lesgeven4.jpg";
-import IntroPose from "../img/intropose.jpg";
 import Houdingen from "../img/houdingen.jpg";
-import blob from "../img/blob.svg";
 import { IntroScreen } from "../components/introscreen";
 import { SocialIcon } from "react-social-icons";
+import React, { useEffect } from "react";
+import "./home.css";
 
 export default function Home() {
   return (
     <>
       <IntroScreen />
-
-      <section className="lightest">
-        <div className="content">
+      <div className="media-container lightest">
+        <section className="content-container dark">
           <div className="text-container">
             <h1>GyroTonic</h1>
             <br />
@@ -38,12 +32,12 @@ export default function Home() {
           <div className="image-container">
             <img id="mooiepose" src={Houdingen} alt="" />
           </div>
-        </div>
-        <DividerTypeOne color={"dark"} />
-      </section>
-
-      <section className="dark">
-        <div className="content gyro">
+        </section>
+        <DividerTypeTwo color={"dark"} />
+        <section className="content-container">
+          <div className="image-container gyro">
+            <img id="gyro-picture" src={TessaWoutersHouding} alt="" />
+          </div>
           <div className="text-container" id="rightside">
             <h1>Wat kan gyrotonic voor jou betekenen?</h1>
             <br />
@@ -58,17 +52,11 @@ export default function Home() {
               welzijn te verbeteren.
             </p>
           </div>
-          <div className="image-container gyro">
-            <img className="shape" src={blob} alt="" />
-            <img className="picture" src={TessaWoutersHouding} alt="" />
-          </div>
-        </div>
-        <DividerTypeTwo color={"lightest"} />
-      </section>
+        </section>
+        <DividerTypeOne color={"dark"} />
 
-      <section className="lightest">
-        <div className="content">
-          <div className="text-container biografie">
+        <section className="content-container dark">
+          <div className="text-container">
             <h1> Over mijzelf</h1>
             <br />
             <p>
@@ -81,12 +69,16 @@ export default function Home() {
           <div className="image-container">
             <img id="lesgeven" src={LesGeven} alt="" />
           </div>
-        </div>
-        <DividerTypeOne color={"dark"} />
-      </section>
+        </section>
+        <DividerTypeTwo color={"dark"} />
 
-      <section className="dark">
-        <div className="content gyro">
+        <section className="content-container lightest">
+          <div className="image-container" id="practise-pictures">
+            <img src={LesGeven} alt="" />
+            <img src={LesGeven2} alt="" />
+            <img src={LesGeven3} alt="" />
+            <img src={LesGeven4} alt="" />
+          </div>
           <div className="text-container" id="rightside">
             <h1>Interesse?</h1>
             <br />
@@ -100,67 +92,58 @@ export default function Home() {
               halen. Dus waar wacht je nog op?
             </p>
           </div>
-          <div className="image-container gyro" id="voorbeelden">
-            <img className="makebigger" src={LesGeven} alt="" />
-            <img className="makebigger" src={LesGeven2} alt="" />
-            <img className="makebigger" src={LesGeven3} alt="" />
-            <img className="makebigger" src={LesGeven4} alt="" />
-          </div>
-        </div>
-        <DividerTypeTwo color={"lightest"} />
-      </section>
-
-      <section section className="lightest">
-        <div className="content">
-          <div className="content contact">
-            <div className="text-container subcontact">
-              <h1>Contact</h1>
-              <br />
-              <p>
-                Neem vandaag nog contact met mij op en ontdek de vele voordelen
-                van gyrotonic voor jouw lichaam en geest. Samen zullen we een op
-                maat gemaakt trainingsprogramma ontwikkelen dat perfect past bij
-                jouw behoeften en doelen. Laten we samen werken aan een
-                gezonder, sterker en meer evenwichtig leven.
-              </p>
-            </div>
-            <div className="text-container subcontact">
-              <br />
-              <ul className="SocialList">
-                <li>
-                  <SocialIcon url="https://linkedin.com/in/jaketrent" />
-                  &emsp;LinkedIn
-                </li>
-                <li>
-                  <SocialIcon url="https://www.facebook.com/rein.werner.7/" />
-                  &emsp;Facebook
-                </li>
-                <li>
-                  <SocialIcon url="rein.goedhart@gmail.com" />
-                  &emsp;Email
-                </li>
-                <li>
-                  <SocialIcon url="https://twitter.com/debroervanroos" />
-                  &emsp;Twitter
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        </section>
         <DividerTypeOne color={"dark"} />
-      </section>
 
-      <p className="dark">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </p>
+        <section className="content-container dark">
+          <div className="text-container subcontact">
+            <h1>Contact</h1>
+            <br />
+            <p>
+              Neem vandaag nog contact met mij op en ontdek de vele voordelen
+              van gyrotonic voor jouw lichaam en geest. Samen zullen we een op
+              maat gemaakt trainingsprogramma ontwikkelen dat perfect past bij
+              jouw behoeften en doelen. Laten we samen werken aan een gezonder,
+              sterker en meer evenwichtig leven.
+            </p>
+          </div>
+          <div className="text-container subcontact">
+            <br />
+            <ul className="SocialList">
+              <li>
+                <SocialIcon url="https://linkedin.com/in/jaketrent" />
+                &emsp;LinkedIn
+              </li>
+              <li>
+                <SocialIcon url="https://www.facebook.com/rein.werner.7/" />
+                &emsp;Facebook
+              </li>
+              <li>
+                <SocialIcon url="rein.goedhart@gmail.com" />
+                &emsp;Email
+              </li>
+              <li>
+                <SocialIcon url="https://twitter.com/debroervanroos" />
+                &emsp;Twitter
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section className="content-container darkest">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </section>
+      </div>
     </>
   );
 }

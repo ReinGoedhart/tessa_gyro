@@ -1,5 +1,10 @@
-import "./pagestyling.css";
+import "./contact.css";
+import { IntroScreen } from "../components/introscreen";
 
 export default function Contact() {
-  return <h1>Contact</h1>;
+  return (
+    <>
+      <IntroScreen />
+    </>
+  );
 }

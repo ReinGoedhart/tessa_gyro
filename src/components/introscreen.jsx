@@ -1,7 +1,7 @@
 import React from "react";
-import HoofdAfbeelding from "../img/hoofdafbeelding.png";
-import "../pages/pagestyling.css";
+import HoofdAfbeelding from "../img/hoofdafbeeldingLogo.png";
 import { DividerTypeTwo } from "./divider";
+import "../pages/home.css";
 
 export function IntroScreen() {
   return (

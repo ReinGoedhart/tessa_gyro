@@ -1,4 +1,5 @@
 import React from "react";
+import "../pages/home.css";
 
 export function DividerTypeOne({ color }) {
   return (
@@ -6,7 +7,7 @@ export function DividerTypeOne({ color }) {
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
+        viewBox="0 0 2600 160"
         preserveAspectRatio="none"
       >
         <path

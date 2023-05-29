@@ -1,10 +1,10 @@
 import Contact from "./pages/contact";
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import Calender from "./pages/calender";
 import Galery from "./pages/galery";
 import { Navbar } from "./components/navbar";
 import { Route, Routes } from "react-router-dom";
-import "./styles.css";
+import "./App.css";
 
 export function App() {
   return (

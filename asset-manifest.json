@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tessa_gyro.git/static/css/main.1c4e84ae.css",
-    "main.js": "/tessa_gyro.git/static/js/main.2e982b7a.js",
+    "main.js": "/tessa_gyro.git/static/js/main.d1dc9745.js",
     "static/media/hoofdafbeeldingLogo.png": "/tessa_gyro.git/static/media/hoofdafbeeldingLogo.834ad5906b4469f33e69.png",
     "static/media/tessawoutershoudingBlob.png": "/tessa_gyro.git/static/media/tessawoutershoudingBlob.e1327729406198cca3ea.png",
     "static/media/Lesgeven3.jpg": "/tessa_gyro.git/static/media/Lesgeven3.3825ac28fa18f2baab0d.jpg",
@@ -11,10 +11,10 @@
     "static/media/Lesgeven2.jpg": "/tessa_gyro.git/static/media/Lesgeven2.2f336fdcbe4e72b09879.jpg",
     "index.html": "/tessa_gyro.git/index.html",
     "main.1c4e84ae.css.map": "/tessa_gyro.git/static/css/main.1c4e84ae.css.map",
-    "main.2e982b7a.js.map": "/tessa_gyro.git/static/js/main.2e982b7a.js.map"
+    "main.d1dc9745.js.map": "/tessa_gyro.git/static/js/main.d1dc9745.js.map"
   },
   "entrypoints": [
     "static/css/main.1c4e84ae.css",
-    "static/js/main.2e982b7a.js"
+    "static/js/main.d1dc9745.js"
   ]
 }
